@@ -1,43 +1,45 @@
+nclude <stdlib.h>
+
+#include <time.h>
+
 #include <stdio.h>
+
+
 
 /**
  *
- *  * main - print if the number is postive, zero, or negative
+ *  * main - assigns a random number to int n everytime
  *
- *   *
+ *   * it executes, and prints it
  *
- *    * Description: using the main function
+ *    * Return: Always 0 (Success)
  *
- *     * this program prints "Programming is positive, zero, or negative
- *
- *      * Return: 0
- *
- *       */
+ *     */
 
 int main(void)
 
 {
 
-	char c;
+		int n;
 
-	for (c = '0'; c <= '9'; c++)
 
-	{
 
-			putchar(c);
+			srand(time(0));
 
-	}
+				n = rand() - RAND_MAX / 2;
 
-	for (c = 'a'; c <= 'f'; c++)
+					if (n > 0)
 
-	{
+								printf("%d is positive\n", n);
 
-			putchar(c);
+						else if (n == 0)
 
-	}
+									printf("%d is zero\n", n);
 
-	putchar('\n');
+							else if (n < 0)
 
-	return (0);
+										printf("%d is negative\n", n);
+
+								return (0);
 
 }
