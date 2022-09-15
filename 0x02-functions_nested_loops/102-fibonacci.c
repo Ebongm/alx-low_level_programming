@@ -2,9 +2,9 @@
 
 /**
 
-*main - prints count of multiples
+*main - prints out first 50
 
-*of 3 or 5 below 1024
+*fibonacci suit numbers
 
 *Return: return 0
 
@@ -14,19 +14,37 @@ int main(void)
 
 {
 
-int n, sum = 0;
+int inc;
 
-for (n = 0; n < 1024; n++)
+unsigned long n1 = 0, n2 = 1, n3;
+
+for (inc = 0; inc < 50; inc++)
 
 {
 
-if ((n % 3) == 0 || (n % 5) == 0)
+n3 = n1 + n2;
 
-sum += n;
+printf("%lu", n3);
+
+n1 = n2;
+
+n2 = n3;
+
+
+
+if (inc == 49)
+
+printf("\n");
+
+else
+
+printf(", ");
+
+
 
 }
 
-printf("%d\n", sum);
+
 
 return (0);
 
