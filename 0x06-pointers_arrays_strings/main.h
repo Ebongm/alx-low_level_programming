@@ -1,20 +1,20 @@
-fndef MAIN_H                                                                                                                     
+#ifndef MAIN_H                                                                                                                     
 
 #define MAIN_H                                                                                                                     
 
                                                                                                                                         
 
 /**                                                                                                                                     
- *
- *  * File: main.h                                                                                                                    
- *
- *   * Auth: sam tech(Samuel birhanu)                                                                                                             
- *
- *    * Desc: Header file containing prototypes for all functions                                                                            
- *
- *     *       used in the 0x06. C - More pointers, arrays and strings directory.
- *
- *      */                                                                                                                                     
+
+ * File: main.h                                                                                                                    
+
+ * Auth: sam tech(Samuel birhanu)                                                                                                             
+
+ * Desc: Header file containing prototypes for all functions                                                                            
+
+ *       used in the 0x06. C - More pointers, arrays and strings directory.
+
+ */                                                                                                                                     
 
                                                                                                                                         
 
@@ -47,5 +47,4 @@ void print_buffer(char *b, int size);
                                                                                                                                         
 
 #endif
-
 
