@@ -3,27 +3,29 @@
 
 
 /**
- *
- *  * _puts - write string followed by new line
- *
- *   * @str: string
- *
- *    * Return: void
- *
- *     */
+
+ * _puts - prints a string to stdout
+
+ * @str: pointer to the string to print
+
+ */
 
 void _puts(char *str)
 
 {
 
-		while (*str)
-
-					_putchar(*str++);
+	int i;
 
 
 
-			_putchar('\n');
+	for (i = 0; str[i] != '\0'; i++)
+
+	{
+
+		_putchar(str[i]);
+
+	}
+
+	_putchar('\n');
 
 }
-
-
