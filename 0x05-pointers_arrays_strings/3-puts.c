@@ -3,27 +3,26 @@
 
 
 /**
- *
- *  * _puts - write string followed by new line
- *
- *   * @str: string
- *
- *    * Return: void
- *
- *     */
+
+ * _puts - write string followed by new line
+
+ * @str: string
+
+ * Return: void
+
+ */
 
 void _puts(char *str)
 
 {
 
-		while (*str)
+	while (*str)
 
-					_putchar(*str++);
+		_putchar(*str++);
 
 
 
-			_putchar('\n');
+	_putchar('\n');
 
 }
-
 
